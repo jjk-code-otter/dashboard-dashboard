@@ -27,7 +27,6 @@
 			background-color: #f0f0f0;
 			border-radius: 5px;
 			box-shadow: 0px 0px 5px #ccc;
-			width: 300px;
 			min-height: 200px;
 			max-height: 350px;
 			display: flex;
@@ -36,6 +35,25 @@
 			justify-content: space-between;
 		}
 
+		/* Set the panel width to 25% for screens that are 768px wide or larger */
+		@media screen and (min-width: 768px) {
+		  .panel {
+		    width: 25%;
+		  }
+		}
+
+		/* Set the panel width to 100% for screens that are smaller than 768px */
+		@media screen and (max-width: 767px) {
+		  .panel {
+		    width: 100%;
+		  }
+		}
+
+		/* Set a minimum width of 300px for all panels */
+		.panel {
+		  min-width: 300px;
+		}
+		
 		.panel img {
 			max-width: 100%;
 			max-height: 200px;
