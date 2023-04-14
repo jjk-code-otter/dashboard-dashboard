@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The ENSO wrap-up wrap-up</title>
+	<style>
+		/* Header bar styling */
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 5px 20px;
+			text-align: center;
+			font-size: 24px;
+		}
+		/* Panel container styling */
+		.panel-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 5px;
+		}
+
+		/* Individual panel styling */
+		.panel {
+			margin: 5px;
+			padding: 5px;
+			background-color: #f0f0f0;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px #ccc;
+			min-height: 200px;
+			max-height: 350px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		/* Set the panel width to 25% for screens that are 768px wide or larger */
+		@media screen and (min-width: 768px) {
+		  .panel {
+		    width: 25%;
+		  }
+		}
+
+		/* Set the panel width to 100% for screens that are smaller than 768px */
+		@media screen and (max-width: 767px) {
+		  .panel {
+		    width: 100%;
+		  }
+		}
+
+		/* Set a minimum width of 300px for all panels */
+		.panel {
+		  min-width: 300px;
+		}
+		
+		.panel img {
+			max-width: 100%;
+			max-height: 200px;
+			object-fit: contain;
+			margin-bottom: 5px;
+		}
+
+		.panel h3 {
+			margin-top: 0;
+		}
+		.panel p {
+                        margin-bottom: 0; /* reduced margin */
+                }
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>The ENSO wrap-up wrap-up</h1>
+	</header>
+
+	<div class="panel-container">
+		<div class="panel">
+			<a href="http://www.bom.gov.au/climate/enso/"><img src="https://via.placeholder.com/300x200.png?text=Climate+Driver+Update" alt="BoM Climate Driver Update"></a>
+			<h3>Bureau of Meteorology Climate Driver Update</h3>
+			<p>The best obvy</p>
+		</div>
+		<div class="panel">
+			<a href="https://community.wmo.int/en/activity-areas/climate/wmo-el-ninola-nina-updates"><img src="https://via.placeholder.com/300x200.png?text=WMO+ENSO+update" alt="WMO El Niño/La Niña Updates"></a>
+			<h3>WMO El Niño/La Niña Updates</h3>
+			<p>The best obvy</p>
+		</div>
+
+	</div>
+
+</body>
+</html>
